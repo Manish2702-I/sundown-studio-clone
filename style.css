@@ -1,0 +1,565 @@
+@font-face {
+    font-family: mediu;
+    src: url(./NeueHaasDisplay-Mediu.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    position: relative;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 0 4vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 0vh;
+}
+.con{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    position: relative;
+}
+.con h2{
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5vh;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+    font-family: mediu;
+    font-weight: 100;
+}
+.con h2::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -6vh;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+.con h2:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+.con h2 a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 9;
+}
+.con h2:hover a{
+    color: white;
+}
+.part-2{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.left p{
+    width: 45vh;
+    font-size: 3vh;
+    padding-bottom: 7vh;
+    font-family: mediu;
+}
+.right h3{
+    font-size: 14vh;
+    width: 60vh;
+    text-align: right;
+    padding-bottom: 6vh;
+    font-family: mediu;
+}
+video{
+    width: 100%;
+    margin-top: 7vh;
+    border-radius: 3vh;
+}
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    overflow: hidden;
+    padding: 10vh 0;
+}
+.moving{
+    white-space: nowrap;
+    animation-name: slider;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+.moving h2{
+    font-size: 15vh;
+    font-family: mediu;
+    display: inline-block;
+    margin: 1vh 4vh;
+}
+.move1{
+    white-space: nowrap;
+    display: inline-block;
+}
+.moving h2::-webkit-scrollbar{
+    display: none;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25vh 10vh;
+}
+.image{
+    height: 30vh;
+    width: 40vh;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 3vh;
+    margin-top: 9vh;
+}
+.middle .h1{
+    font-size: 10vh;
+    font-family: mediu;
+    line-height: 9.5vh;
+    letter-spacing: -0.1vh;
+    font-weight: 600;
+}
+.image p{
+    font-size: 1.8vh;
+    font-family: mediu;
+    text-align: left;
+    padding-top: 6vh;
+}
+.h2 h1{
+    font-size: 2.6vh;
+    font-family: mediu;
+    font-weight: 100;
+    padding-left: 5vh;
+    padding-top: 3vh;
+}
+@keyframes slider{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+.fixed-image{
+    height: 40vh;
+    width: 35vh;
+    position: fixed;
+    top: 30%;
+    left: 60%;
+    z-index: 99;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    border-radius: 2vh;
+}
+.box1{
+    height: 20vh;
+    width: 100%;
+    border-bottom: 1px solid rgb(207, 201, 201);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vh;
+    font-family: mediu;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.org{
+    height: 100%;
+    width: 100%;
+    background-color: #FF9831;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.3s;
+}
+.box1 h1{
+    font-size: 7vh;
+    position: relative;
+    z-index: 9;
+}
+.box1:hover .org{
+    top: 0;
+}
+.min{
+    text-align: right;
+    font-weight: 100;
+}
+.min span{
+    color: rgb(173, 167, 167);
+}
+.min h4{
+    font-size: 1.7vh;
+}
+.box2{
+    height: 20vh;
+    width: 100%;
+    border-bottom: 1px solid rgb(207, 201, 201);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vh;
+    font-family: mediu;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.box2 h1{
+    font-size: 7vh;
+    position: relative;
+    z-index: 9;
+}
+.box2:hover .org{
+    top: 0;
+}
+.min1{
+    text-align: right;
+    font-weight: 100;
+}
+.min1 span{
+    color: rgb(173, 167, 167);
+}
+.min1 h4{
+    font-size: 1.7vh;
+}
+.box3{
+    height: 20vh;
+    width: 100%;
+    border-bottom: 1px solid rgb(207, 201, 201);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vh;
+    font-family: mediu;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.box3 h1{
+    font-size: 7vh;
+    position: relative;
+    z-index: 9; 
+}
+.box3:hover .org{
+    top: 0;
+}
+.min2 h4{
+    font-size: 1.7vh;
+}
+.min2 span{
+    color: rgb(173, 167, 167);
+}
+.min2{
+    text-align: right;
+    font-weight: 100;
+}
+.box4{
+    height: 20vh;
+    width: 100%;
+    border-bottom: 1px solid rgb(207, 201, 201);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vh;
+    font-family: mediu;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.box4 h1{
+    font-size: 7vh;
+    position: relative;
+    z-index: 9; 
+}
+.box4:hover .org{
+    top: 0;
+}
+.min3 h4{
+    font-size: 1.7vh;
+}
+.min3 span{
+    color: rgb(173, 167, 167);
+}
+.min3{
+    text-align: right;
+    font-weight: 100;
+}
+.box5{
+    height: 20vh;
+    width: 100%;
+    border-bottom: 1px solid rgb(207, 201, 201);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vh;
+    font-family: mediu;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.box5 h1{
+    font-size: 7vh;
+    position: relative;
+    z-index: 9; 
+}
+.box5:hover .org{
+    top: 0;
+}
+.min4 h4{
+    font-size: 1.7vh;
+}
+.min4 span{
+    color: rgb(173, 167, 167);
+}
+.min4{
+    text-align: right;
+    font-weight: 100;
+}
+.box6{
+    height: 20vh;
+    width: 100%;
+    border-bottom: 1px solid rgb(207, 201, 201);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vh;
+    font-family: mediu;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.box6 h1{
+    font-size: 7vh;
+    position: relative;
+    z-index: 9; 
+}
+.box6:hover .org{
+    top: 0;
+}
+.min5 h4{
+    font-size: 1.7vh;
+}
+.min5 span{
+    color: rgb(173, 167, 167);
+}
+.min5{
+    text-align: right;
+    font-weight: 100;
+}
+.box7{
+    height: 20vh;
+    width: 100%;
+    border-bottom: 1px solid rgb(207, 201, 201);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vh;
+    font-family: mediu;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.box7 h1{
+    font-size: 7vh;
+    position: relative;
+    z-index: 9; 
+}
+.box7:hover .org{
+    top: 0;
+}
+.min6 h4{
+    font-size: 1.7vh;
+}
+.min6 span{
+    color: rgb(173, 167, 167);
+}
+.min6{
+    text-align: right;
+    font-weight: 100;
+}
+.button{
+    height: 15vh;
+    width: 100%;
+    padding-top: 8vh;
+    padding-left: 5vh;
+    position: relative;
+    
+}
+.button button{
+    padding: 2vh 3vh;
+    font-size: 2.6vh;
+    border-radius: 7vh;
+    position: relative;
+    overflow: hidden;
+    font-weight: 300;
+}
+.button button a{
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+    color: black;
+}
+.button button a:hover{
+    color: white;
+}
+.button button::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    border-radius: 7vh;
+    transition: all ease 0.2s;
+}
+.button button:hover::after{
+    bottom: 0;
+}
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 0 3vh;
+}
+.page4-box{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    border-radius: 2vh;
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page4-mini{
+    height: 32vh;
+    width: 30%;
+    margin-left: 15vh;
+    border-left: 2px solid #504A45;
+}
+.page4-mini a h2{
+    font-size: 9.2vh;
+    font-family: mediu;
+    font-weight: 300;
+}
+.page4-mini a{
+    text-decoration: none;
+    color: #504A45;
+}
+.page4-right{
+    height: 100%;
+    width: 55%;
+}
+.page4-mini p{
+    font-family: mediu;
+    font-size: 2.2vh;
+    font-weight: 100;
+    color: white;
+}
+.page4-right img{
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+.page5{
+    height: 80vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 5vh 13vh;
+    display: flex;
+    overflow: hidden;
+}
+.slider-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5vh;
+    margin: 0 2vh;
+}
+.slider-box1{
+    height: 40vh;
+    width: 80vh;
+    background-color: bisque;
+    background-image: url("./page5-box1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.slider-box2{
+    height: 40vh;
+    width: 80vh;
+    background-color: bisque;
+    background-image: url("./page5-box2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.slider-box3{
+    height: 40vh;
+    width: 80vh;
+    background-color: bisque;
+    background-image: url("./page5-box3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.slider-box4{
+    height: 40vh;
+    width: 80vh;
+    background-color: bisque;
+    background-image: url("./page5-box4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.slider-box5{
+    height: 40vh;
+    width: 80vh;
+    background-color: bisque;
+    background-image: url("./page5-box5.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.slider-box6{
+    height: 40vh;
+    width: 80vh;
+    background-color: bisque;
+    background-image: url("./page5-box6.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.slider-page{
+    white-space: nowrap;
+    animation-name: slider;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
